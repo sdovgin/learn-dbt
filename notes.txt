@@ -1,0 +1,10 @@
+Types of Materialization
+    -Table: Model is rebuilt as a table on each run
+        - Fast to query but slow to build and not updated automatically
+    -View: Model is rebuilt as a view on each run
+        - Quick to build and automatically updates but slow to query
+    -Incremental: Only new or updated records added to table on each run
+        - Quick build time but can have advanced configuration
+        - Good for data that is stored in event-like fashion
+    -Ephemeral: Temporary tables are created but not added into the database
+        - Reuseable logic for multiple models
