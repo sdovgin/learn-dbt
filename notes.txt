@@ -8,3 +8,14 @@ Types of Materialization
         - Good for data that is stored in event-like fashion
     -Ephemeral: Temporary tables are created but not added into the database
         - Reuseable logic for multiple models
+
+Changing the materialization of a model can be done by adding this to the top of the model 
+{{ config(materialized='{type_of_materialization}') }}
+
+or by setting the default materalization in the dbt_project.yml file
+
+models:
+  learn_dbt:
+    # Config indicated by + and applies to all files under models/example/
+    example:
+      +materialized: {type_of_materialization}
