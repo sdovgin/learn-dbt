@@ -10,7 +10,7 @@ Types of Materialization
         - Reuseable logic for multiple models
 
 Changing the materialization of a model can be done by adding this to the top of the model 
-{{ config(materialized='{type_of_materialization}') }}
+{{ config(materialized='{type_of_materialization}', unique_key='{key_value}') }}
 
 or by setting the default materalization in the dbt_project.yml file
 
