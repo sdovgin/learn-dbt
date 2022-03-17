@@ -19,3 +19,6 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: {type_of_materialization}
+
+Variables
+    -Can be accessed from the dbt models 

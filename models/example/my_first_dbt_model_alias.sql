@@ -3,7 +3,7 @@
     Alias Practice
 */
 
-{{ config(materialized='table', alias='first_model', schema='sdovgin_test',database='analytics_test') }}
+{{ config(materialized='table', alias='first_model', schema='sdovgin_test') }}
 
 
 with source_data as (
