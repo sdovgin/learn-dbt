@@ -47,3 +47,17 @@ models:
   - name: dates
   - name: incremental_time
   - name: my_first_dbt_model_alias
+  - name: playing_with_tests
+    description: "Assignment to create tests"
+    columns:
+      - name: c_custkey
+        tests:
+          - unique
+          - not_null
+      - name: c_mktsegment
+        tests:
+          - accepted_values:
+              values: ['AUTOMOBILE', 'BUILDING', 'MACHINERY', 'HOUSEHOLD', 'FURNITURE']
+      - name: c_acctbal
+
+
