@@ -21,4 +21,11 @@ models:
       +materialized: {type_of_materialization}
 
 Variables
-    -Can be accessed from the dbt models 
+    -Can be accessed from the dbt models
+
+Tests
+    -not null: making sure the value is not null
+    -unique: making sure that the value is unique
+    -accepted_values: specify which values are accepted and the response if they are not
+        -good to use for expected string values
+    -relationships: making sure that the value from one model matches the value in another model
