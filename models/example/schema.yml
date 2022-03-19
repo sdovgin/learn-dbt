@@ -44,7 +44,6 @@ models:
           - unique
           - not_null
 
-  - name: dates
   - name: incremental_time
   - name: my_first_dbt_model_alias
   - name: playing_with_tests

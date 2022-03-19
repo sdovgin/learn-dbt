@@ -37,3 +37,15 @@ Custom Tests
         -Verify exact row with exact value
         -When aggregating data that is is in a certain range
         -Only a certain percent of missing values
+
+Running dbt
+    dbt run --models example
+        Command to run all models in the example directory
+    dbt run --models dates
+        Command to run all models called dates
+    dbt run --models example.dates
+        Command to run dates model in example dir
+    dbt run --models example.dates example.my_first_dbt_model
+        Command to run multiple specific models
+    dbt run --m new
+        Command to run models in new directory
