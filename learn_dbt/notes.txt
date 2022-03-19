@@ -50,9 +50,11 @@ Running dbt
     dbt run --m new
         Command to run models in new directory
 
-Setting up dbt cloud
+Dbt cloud
     - Create an account and add the user/password for the admin snowflake account
     - Go to settings > analytics and configure your snowflake connection with the information
     from your profiles.yml section
     - Configure the repository
         -Copy the deploy key in github > settings > deploy key and add the key and give write status
+    - Setup a production environment
+    - Setup a manual or daily run (can add commands to the job)
