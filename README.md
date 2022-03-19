@@ -1,4 +1,4 @@
-## This Project follows the learn-dbt Udemy course that goes over the fundamentals of dbt
+This Project follows the learn-dbt Udemy course that goes over the fundamentals of dbt
 
 ### Using the starter project
 
