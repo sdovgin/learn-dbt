@@ -60,6 +60,6 @@ Dbt cloud
     - Setup a manual or daily run (can add commands to the job)
 
 Hooks
-    - Used to run SQl before running the models
+    - Used to run SQl before/after running the models
     - Grant permissions to specific tables/models to other roles
 

@@ -45,6 +45,3 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       materialized: table
-      post-hook:
-        - 'grant usage on schema {{target.this}} to role analyst'
-        - 'grant select on {{this}} to role analyst'
