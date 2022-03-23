@@ -1,4 +1,4 @@
-{{ config(materialized='table', alias='first_model_table', post_hook='grant select on {{this}} to role analyst') }}
+{{ config(materialized='table', alias='first_model_table') }}
 
 
 with source_data as (
