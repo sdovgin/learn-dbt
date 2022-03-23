@@ -58,3 +58,8 @@ Dbt cloud
         -Copy the deploy key in github > settings > deploy key and add the key and give write status
     - Setup a production environment
     - Setup a manual or daily run (can add commands to the job)
+
+Hooks
+    - Used to run SQl before running the models
+    - Grant permissions to specific tables/models to other roles
+
