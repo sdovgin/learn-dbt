@@ -77,3 +77,7 @@ Sources
 Macro
     - Allows you to abstract parts of the code
     - Reusability of the code
+
+Run-operation
+    - run-operation lets you invoke a macro and define args
+    - dbt run-operation suspend --args '{warehouse_name: transform_wh}'
