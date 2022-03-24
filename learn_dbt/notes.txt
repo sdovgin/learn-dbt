@@ -73,3 +73,7 @@ Sources
     - Can be referenced be the models
     - Can be used to create the models
     - Run models from a specific source with "dbt run --models source:sample+"
+
+Macro
+    - Allows you to abstract parts of the code
+    - Reusability of the code
