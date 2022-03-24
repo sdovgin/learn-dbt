@@ -59,4 +59,22 @@ models:
               values: ['AUTOMOBILE', 'BUILDING', 'MACHINERY', 'HOUSEHOLD', 'FURNITURE']
       - name: c_acctbal
 
+sources:
+  - name: sample
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: customer
+        columns:
+          - name: c_custkey
+            tests:
+              - unique
+              - not_null
+      - name: orders
+  - name: sample_2
+    database: snowflake_sample_data
+    schema: tpcds_sf10tcl
+    tables:
+      - name: time_dim
+
 

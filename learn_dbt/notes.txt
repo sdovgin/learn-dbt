@@ -68,3 +68,8 @@ Snapshots
     - Includes an updated_at field, dbt_updated_at, valid_from and valid_to
     - Run using "dbt snapshot"
     - Keep track of slowly changing dimensional fields over time
+
+Sources
+    - Can be referenced be the models
+    - Can be used to create the models
+    - Run models from a specific source with "dbt run --models source:sample+"

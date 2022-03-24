@@ -5,6 +5,6 @@ select distinct
 from 
 (
   SELECT *
-  FROM snowflake_sample_data.tpch_sf1.orders
+  FROM {{ source('sample', 'orders') }}
 )
 order by o_orderdate
