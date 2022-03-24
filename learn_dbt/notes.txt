@@ -87,3 +87,8 @@ Tags
     - Run models with nightly tag "dbt run --model tag:nightly"
     - A model can be given multiple tags by which it can be referenced
     - Can be useful when setting up runs in dbt cloud
+
+Limiting the data
+    - Can be helpful for running only a subset of the data
+    - This depends on the target
+    - Use case: if the target is dev then only run a subset of the data
