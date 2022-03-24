@@ -81,3 +81,9 @@ Macro
 Run-operation
     - run-operation lets you invoke a macro and define args
     - dbt run-operation suspend --args '{warehouse_name: transform_wh}'
+
+Tags
+    - Allows you to place specific tags on models in order to run them
+    - Run models with nightly tag "dbt run --model tag:nightly"
+    - A model can be given multiple tags by which it can be referenced
+    - Can be useful when setting up runs in dbt cloud
