@@ -63,3 +63,8 @@ Hooks
     - Used to run SQl before/after running the models
     - Grant permissions to specific tables/models to other roles
 
+Snapshots
+    - Requires a state
+    - Includes an updated_at field, dbt_updated_at, valid_from and valid_to
+    - Run using "dbt snapshot"
+    - Keep track of slowly changing dimensional fields over time
